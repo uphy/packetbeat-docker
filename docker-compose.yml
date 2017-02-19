@@ -1,0 +1,8 @@
+version: "3.0"
+services:
+    packetbeat:
+        build: .
+        container_name: packetbeat
+        network_mode: host
+        volumes:
+            - "./config:/etc/packetbeat"
